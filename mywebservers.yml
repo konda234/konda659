@@ -17,5 +17,6 @@
   - name: i want to start httpd service 
     service: 
       name: httpd
-      state: restart
+      state: started
+    when: ansible_os_family =="RedHat"  
     
